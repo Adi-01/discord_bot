@@ -9,71 +9,102 @@
 ## 🚀 Features
 
 - 🛡️ **Admin Commands** (Mute, Ban, Unmute, Kick, Warn, etc.)
-- 📜 **Warning System** (Persistent storage of warnings, auto-moderation)
+- 💜 **Warning System** (Persistent storage of warnings, auto-moderation)
 - 🔇 **Timed Muting** (Automatically unmutes users after a specified duration)
-- 📋 **Ban & Mute Lists** (Check banned or muted users)
+- 🗉 **Ban & Mute Lists** (Check banned or muted users)
 - 🔎 **User ID Lookup**
 - ✅ **Permission Checks** (Ensures only admins or server owners can execute commands)
 - ❌ **Error Handling** (Handles missing arguments, permission errors, and command failures)
 
 ---
 
-## 🛠️ Installation
+## 🧐 Installation
 
-### **1️⃣ Prerequisites**
+### **1⃣ Prerequisites**
+
 - Python 3.8+
 - `discord.py` library (`pip install discord.py`)
 
-### **2️⃣ Clone the Repository**
+### **2⃣ Clone the Repository**
+
 ```bash
 git clone https://github.com/your-username/discord-bot.git
 cd mybot
 ```
 
-### **3️⃣ Install Dependencies**
+### **3⃣ Set Up Virtual Environment**
+
+It is recommended to use a virtual environment to manage dependencies.
+
+#### **For Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### **For macOS/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### **4⃣ Install Dependencies**
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### **4️⃣ Configure the Bot**
+### **5⃣ Configure the Bot**
+
 1. Rename `.env.example` to `.env`
 2. Add your **Discord bot token** and other configurations inside `.env`
 
-### **5️⃣ Run the Bot**
+### **6⃣ Run the Bot**
+
 ```bash
 python main.py
+```
+
+To deactivate the virtual environment when you're done:
+```bash
+deactivate
 ```
 
 ---
 
 ## 📝 Commands
 
-| Command | Description | Usage |
-|---------|-------------|----------|
-| `!warn` | Warns a user | `!warn @User Reason` |
-| `!warnings` | Shows a user's warnings | `!warnings @User` |
-| `!clearwarnings` | Clears warnings for a user | `!clearwarnings @User` |
-| `!mute` | Mutes a user | `!mute @User [Duration]` |
-| `!unmute` | Unmutes a user | `!unmute @User` |
-| `!ban` | Bans a user | `!ban @User Reason` |
-| `!banlist` | Shows banned users | `!banlist` |
-| `!mutedlist` | Shows muted users | `!mutedlist` |
-| `!id` | Gets a user ID | `!id @User` |
+| Command          | Description                | Usage                    |
+| ---------------- | -------------------------- | ------------------------ |
+| `!warn`          | Warns a user               | `!warn @User Reason`     |
+| `!warnings`      | Shows a user's warnings    | `!warnings @User`        |
+| `!clearwarnings` | Clears warnings for a user | `!clearwarnings @User`   |
+| `!mute`          | Mutes a user               | `!mute @User [Duration]` |
+| `!unmute`        | Unmutes a user             | `!unmute @User`          |
+| `!ban`           | Bans a user                | `!ban @User Reason`      |
+| `!banlist`       | Shows banned users         | `!banlist`               |
+| `!mutedlist`     | Shows muted users          | `!mutedlist`             |
+| `!id`            | Gets a user ID             | `!id @User`              |
 
 ---
 
 ## 🔧 Configuration
+
 The bot stores warnings, bans, and mute details in a JSON file using `json_utils`. Ensure that the necessary storage files exist before running the bot.
 
 ---
 
 ## 📜 License
+
 This project is licensed under the **MIT License**.
 
 ---
 
 ## 💬 Support
+
 For issues or contributions, create a GitHub issue or submit a pull request.
 
 🌟 **Star the repo if you find it useful!** 🚀
+
+
 
