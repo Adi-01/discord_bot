@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ### **5️⃣ Run the Bot**
 ```bash
-python bot.py
+python main.py
 ```
 
 ---
